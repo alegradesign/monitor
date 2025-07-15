@@ -221,7 +221,7 @@
     "--error-message-color": "#999999",
     "--label-max-width": "60px",
 
-    "--logo-filter": "grayscale(100%) invert(1) brightness(3.5)"
+    "--logo-filter": "grayscale(100%) invert(1) brightness(1.2)"
 
   },
   "vintage": {
