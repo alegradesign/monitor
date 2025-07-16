@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +11,8 @@
   <meta property="og:image:secure_url" content="img/page-thumb.png" /> 
   <meta property="og:description" content="Monitor de secciones y status" />
   <link rel="shortcut icon" href="img/favicon.ico">
-  <script src="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.4.1/dist/xloader.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.4.1/dist/xdiagrams.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.4.2/dist/xloader.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.4.2/dist/xdiagrams.min.css" rel="stylesheet">
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://unpkg.com/papaparse@5.3.0/papaparse.min.js"></script>
 </head>
@@ -25,11 +25,18 @@ window.$xDiagrams = {
   diagrams: [
     {
       name: "Sections", 
-      url: "https://sheetdb.io/api/v1/u8hklytt9tcwp"
+      url: "https://sheetdb.io/api/v1/u8hklytt9tcwp",
+      layout: {
+        // clustersPerRow: 5,
+        marginX: 30,
+        marginY: 30,
+        spacingX: 60,
+        spacingY: 60
+      }
     }
   ]
 };
 </script>
-<script src="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.4.1/dist/xdiagrams.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.4.2/dist/xdiagrams.min.js"></script>
 </body>
 </html> 
