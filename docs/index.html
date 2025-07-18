@@ -11,8 +11,8 @@
   <meta property="og:image:secure_url" content="img/page-thumb.png" /> 
   <meta property="og:description" content="Monitor de secciones y status" />
   <link rel="shortcut icon" href="img/favicon.ico">
-  <script src="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.4.3/dist/xloader.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.4.3/dist/xdiagrams.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.4.4/dist/xloader.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.4.4/dist/xdiagrams.min.css" rel="stylesheet">
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://unpkg.com/papaparse@5.3.0/papaparse.min.js"></script>
 </head>
@@ -25,9 +25,20 @@ window.$xDiagrams = {
   diagrams: [
     {
       name: "Sections", 
-      url: "https://sheetdb.io/api/v1/u8hklytt9tcwp",
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv",
       layout: {
         clustersPerRow: 7,
+        marginX: 30,
+        marginY: 30,
+        spacingX: 60,
+        spacingY: 60
+        }
+      },
+      {
+      name: "People",
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=1495873101",
+      layout: {
+        clustersPerRow: "4 3 5 3",
         marginX: 30,
         marginY: 30,
         spacingX: 60,
@@ -37,6 +48,7 @@ window.$xDiagrams = {
   ]
 };
 </script>
-<script src="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.4.3/dist/xdiagrams.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.4.4/dist/xdiagrams.min.js"></script>
 </body>
 </html> 
+
