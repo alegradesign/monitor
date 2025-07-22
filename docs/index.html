@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monitor</title>
+  <title>Alegra Monitor</title>
   <meta name="robots" content="noindex, nofollow, noarchive">
   <link rel="shortcut icon" href="img/favicon.ico">
   <meta property="og:title" content="Monitor" />
@@ -11,8 +11,8 @@
   <meta property="og:image:secure_url" content="img/page-thumb.png" /> 
   <meta property="og:description" content="Monitor de secciones y status" />
   <link rel="shortcut icon" href="img/favicon.ico">
-  <script src="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.4.4/dist/xloader.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.4.4/dist/xdiagrams.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.5.0/dist/xloader.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.5.0/dist/xdiagrams.min.css" rel="stylesheet">
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://unpkg.com/papaparse@5.3.0/papaparse.min.js"></script>
 </head>
@@ -21,34 +21,65 @@
 <script>
 window.$xDiagrams = {
   title: "Monitor",
-  logo: "img/logo.svg",
   diagrams: [
     {
-      name: "Sections", 
-      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv",
-      layout: {
-        clustersPerRow: 7,
-        marginX: 30,
-        marginY: 30,
-        spacingX: 60,
-        spacingY: 60
-        }
+      name: "All", 
+      urls: [
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=1249302591",
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv",
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=1516287609",
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=290725589",
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=941705944",
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=775790614",     
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=1810896058",
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=1313407268"                    
+      ],
+      combineSheets: {
+        enabled: true,
+        sheetNames: ["Contabilidad", "Inventario", "Ventas"],
+        mergeStrategy: "append"
       },
-      {
-      name: "People",
-      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=1495873101",
       layout: {
-        clustersPerRow: "4 3 5 3",
-        marginX: 30,
-        marginY: 30,
+        clustersPerRow: "6 3 7 5",
         spacingX: 60,
         spacingY: 60
       }
+    },
+    {
+      name: "Alegra Contabilidad", 
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv"
+    },
+    {
+      name: "Espacio Contador", 
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=290725589"
+    },
+    {
+      name: "Alegra POS", 
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=775790614"
+    },
+    {
+      name: "Alegra Nomina", 
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=1810896058"
+    },
+    {
+      name: "Alegra Facturacion", 
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=941705944"
+    },
+    {
+      name: "Alegra Tienda", 
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=1313407268"
+    },
+    {
+      name: "Mi Alegra", 
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=1516287609"
+    },
+    {
+      name: "Websites", 
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=1249302591"
     }
   ]
 };
 </script>
-<script src="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.4.4/dist/xdiagrams.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.5.0/dist/xdiagrams.min.js"></script>
 </body>
 </html> 
-

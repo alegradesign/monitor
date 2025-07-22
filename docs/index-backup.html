@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitor</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <meta property="og:title" content="Monitor" />
+  <meta property="og:image" content="img/page-thumb.png" />
+  <meta property="og:image:secure_url" content="img/page-thumb.png" /> 
+  <meta property="og:description" content="Monitor de secciones y status" />
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <script src="xloader.js"></script>
+  <link href="xdiagrams.css" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/papaparse@5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+<div class="xcanvas"></div>
+<script>
+window.$xDiagrams = {
+  title: "Monitor",
+  logo: "img/logo.svg",
+  diagrams: [
+    {
+      name: "Alegra Completo", 
+      // Array de URLs para cargar múltiples hojas del mismo Google Sheets
+      urls: [
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv",
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=775790614",
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=1495873101"     
+      ],
+      // Configuración opcional para combinar las hojas
+      combineSheets: {
+        enabled: true,
+        sheetNames: ["Contabilidad", "POS"],
+        mergeStrategy: "append" // "append" o "merge"
+      },
+      layout: {
+        clustersPerRow: 7,
+        marginX: 30,
+        marginY: 30,
+        spacingX: 60,
+        spacingY: 60
+      }
+    },
+    {
+      name: "Alegra Contabilidad", 
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv",
+      layout: {
+        clustersPerRow: 7,
+        marginX: 30,
+        marginY: 30,
+        spacingX: 60,
+        spacingY: 60
+      }
+    },
+    {
+      name: "Alegra POS",
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=775790614",
+    }
+  ]
+  
+};
+
+</script>
+<script src="xdiagrams.js"></script>
+</body>
+</html> 
+
