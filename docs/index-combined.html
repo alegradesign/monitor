@@ -24,7 +24,21 @@ window.$xDiagrams = {
   diagrams: [
     {
       name: "All", 
-      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=68069862",
+      urls: [
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=1249302591",
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv",
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=1516287609",
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=290725589",
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=941705944",
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=775790614",     
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=1810896058",
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRGUjJOtNJAx-_fuiXrbKJ9S84oINN4q5XRnNW3mFNd5FJew0mD8eD7JxVi3kfbT85PNMFj3YJU7gwn/pub?output=csv&gid=1313407268"                    
+      ],
+      combineSheets: {
+        enabled: true,
+        sheetNames: ["Contabilidad", "Inventario", "Ventas"],
+        mergeStrategy: "append"
+      },
       layout: {
         clustersPerRow: "6 3 7 5",
         spacingX: 60,
