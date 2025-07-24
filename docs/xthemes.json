@@ -141,7 +141,7 @@
     "--color-base": "220 20%",
 
     "--app-bg": "hsl(var(--color-base) 0% / 1)",
-    "--canvas-bg": "hsl(var(--color-base) 18% / 1)",
+    "--canvas-bg": "hsl(var(--color-base) 28% / 1)",
     "--text-color": "hsl(var(--color-base) 90% / 1)",
 
     "--bg-image": "none",
@@ -155,7 +155,7 @@
     "--thumb-stroke": "transparent",
 
     "--node-fill": "hsl(var(--color-base) 20% / 1)",
-    "--node-stroke": "hsl(var(--color-base) 38% / 1)",
+    "--node-stroke": "hsl(var(--color-base) 48% / 1)",
     "--node-stroke-focus": "#00D6BC",
     "--node-bg-stroke": "1px",
     
@@ -168,11 +168,11 @@
     "--text-subtitle-color": "hsl(var(--color-base) 100% / 0.3)",
     "--subtitle-font-size": "6px",
 
-    "--node-connector": "hsl(var(--color-base) 25% / 1)",
+    "--node-connector": "hsl(var(--color-base) 45% / 1)",
 
-    "--cluster-bg": "hsl(var(--color-base) 10% / 0.5)",
+    "--cluster-bg": "hsl(var(--color-base) 5% / 0.5)",
     "--cluster-stroke": "hsl(var(--color-base) 25% / 1)",
-    "--cluster-title-color": "#CCCCCC",
+    "--cluster-title-color": "hsl(var(--color-base) 45% / 1)",
     "--cluster-padding-x": "220",
     "--cluster-padding-y": "220",
     "--cluster-spacing": "120",
