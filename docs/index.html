@@ -13,45 +13,26 @@
   <link rel="context" href="data/context.md" type="text/markdown">
   <meta name="description" content="Diagrama interactivo de secciones. Contexto completo en data/context.md">
   <title>Alegra Inspector</title>
-  <link href="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.9.0/dist/xdiagrams.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.9.1/dist/xdiagrams.min.css" rel="stylesheet" />
 <style>
-  :root {
-     --color-base: 220 20%;
-   /* --app-bg: #47536B; */
-
-    /* --cluster-bg: #1c2f48;
-    --cluster-hover-bg: red;
-    --cluster-hover-bg-zoom-out: green;
-    --cluster-hover-bg-zoom-in: #00193c;
-    --cluster-selected-bg: #00193c; */
-
-    --node-connector: hsl(0 0% 50% / 1);
-
+   :root {
+    --color-base: 220 20%;
+    --app-bg: #353b47; 
+    --cluster-bg: #20232b !important;
+    --cluster-selected-bg: #4c5464 !important; 
+    --cluster-selected-stroke: hsl(var(--color-base) 65% / 0.8);
+    /* --node-connector: hsl(0 0% 50% / 1); */
     --node-name-text-color: hsl(var(--color-base) 15% / 1);
     --title-pill-logo-filter: none;
     --node-selection-focus: #1FCDB3;
     --thumb-fill-focus: #1FCDB3;
+
+    --cluster-hover-title-large-color: hsl(var(--color-base) 85% / 1);
+    --cluster-hover-title-large-bg-color: hsl(var(--color-base) 15% / 1);
+    --cluster-hover-title-large-border-color: #1FCDB3;      
   }
 
-  .theme-light {
-    --color-base: 215 20%;
-    --app-bg: #47536B;
-
-    --cluster-bg: #1c2f48;
-    --cluster-hover-bg: red;
-    --cluster-hover-bg-zoom-out: green;
-    --cluster-hover-bg-zoom-in: #00193c;
-    --cluster-selected-bg: #00193c;
-
-    --node-name-text-color: hsl(var(--color-base) 15% / 1);
-    --title-pill-logo-filter: none;
-    --node-selection-focus: #1FCDB3;
-    --thumb-fill-focus: #1FCDB3;
-  }
 </style>
-<script>
-    document.documentElement.style.setProperty('--cluster-hover-bg', 'red');
-</script>
 </head>
 <body class="custom-theme">
 
@@ -66,8 +47,7 @@
   };
 </script>
 
-<!-- Módulo principal ES6 (archivo principal de desarrollo) -->
-<script type="module" src="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.9.0/dist/xdiagrams.min.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/swanix/diagrams@v0.9.1/dist/xdiagrams.min.js"></script>
 
 </body>
 </html>
